@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>WeatherApp</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="search" id="search" placeholder="Location...">
+        <div class="webapp">
+            <div class="currentweather">
+                <div class="status_location_time">
+                    <img src="./images/weather/map-pin.svg" id="statusIcon">
+                    <div class="location">
+                        <h1 id="location"></h1>
+                        <h2 id="coords"></h2>
+                    </div>
+                    <div class="currentTimeDate">
+                        <h1 id="time"></h1>
+                        <p id="date"></p>
+                    </div>
+                </div>
+                <div class="currentweatherStats">
+                    <div class="cTemp">
+                        <img src="./images/thermometer.svg" alt="">
+                        <p id="cTemp"></p>
+                    </div>
+                    <div class="cWind">
+                        <img src="./images/wind.svg" alt="">
+                        <p id="cWind"></p>
+                    </div>
+                    <div class="cPres">
+                        <img src="./images/gauge.svg" alt="">
+                        <p id="cPres"></p>
+                    </div>
+                    <div class="cHumid">
+                        <img src="./images/droplet.svg" style="width:40px" alt="">
+                        <p id="cHumid"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="daily_weather">
+
+            </div>
+
+            <div class="graph_it">
+                <canvas id="graphweather"  height="100"></canvas>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
